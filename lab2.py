@@ -2,14 +2,14 @@
 
 """ Graded Lab #2 for Inf1340, Fall 2015 """
 
-__author__ = 'Susan Sim'
-__email__ = "ses@drsusansim.org"
-__copyright__ = "2015 Susan Sim"
-__license__ = "MIT License"
+__author__ = 'Paniz Pakravan'
+__email__ = "p.pakravan@mail.utoronto.ca"
+__copyright__ = "2015 Paniz Pakravan"
+__date__ = "October 15, 2015"
 
 
 """
-Instructions: Add a function to to get input from the user and use that
+Instructions: Add a function to get input from the user and use that
 function in name_that_shape()
 
 The function should prompt the user for input until a legal value is
