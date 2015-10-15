@@ -17,6 +17,17 @@ entered. A legal value is any integer.
 
 """
 
+def get_user_input():
+    valid_input = False
+    while valid_input is not True:
+        user_input = raw_input("Number of sides?")
+        try:
+            user_input = int(user_input)
+            valid_input = True
+        except ValueError:
+            print ("Please enter a number.")
+    return user_input
+
 def name_that_shape():
     """
     For a given number of sides in a regular polygon, returns the shape name
@@ -38,7 +49,7 @@ def name_that_shape():
 
     """
 
-    sides = int(raw_input("Number of sides:"))
+    sides = get_user_input()
 
     if sides == 3:
         print("triangle")
@@ -59,4 +70,4 @@ def name_that_shape():
     else:
         print("Error")
 
-# name_that_shape()
+#name_that_shape()
