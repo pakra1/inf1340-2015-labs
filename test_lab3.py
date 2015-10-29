@@ -33,9 +33,7 @@ def test_months_with_less():
 def lower_days_in_month():
     for item in MONTHS_WITH_31 or MONTHS_WITH_30 or MONTHS_WITH_28_or_29:
         item = item.lower()
-        assert lower_days_in_month(item) == 31
-        assert lower_days_in_month(item) == 30
-        assert lower_days_in_month(item) == "28 or 29"
+        assert lower_days_in_month(item) == 31 or 30 or 29 or 28
 
 def days_in_month_exception():
     try:
